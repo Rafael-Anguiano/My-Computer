@@ -7,7 +7,7 @@ import { Environment, ContactShadows } from '@react-three/drei'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Canvas className={"r3f"} >
+    <Canvas className={"r3f"} dpr={[1,2]}>
       <color attach={"background"} args={["#191919"]} />
       <Environment preset={"city"} />
       <Experience />
