@@ -1,7 +1,6 @@
 import { 
     Html,
     useGLTF,
-    Center,
     Float,
     PresentationControls, 
     Text
