@@ -1,22 +1,20 @@
-import React from 'react'
+import './index.css'
 import ReactDOM from 'react-dom/client'
 import Experience from './Experience'
-import './index.css'
 import { Canvas } from '@react-three/fiber'
-import { Environment, ContactShadows } from '@react-three/drei'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <Canvas className={"r3f"} dpr={[1,2]}>
-      <color attach={"background"} args={["#191919"]} />
-      <Environment preset={"city"} />
+const root = ReactDOM.createRoot(document.querySelector('#root'))
+
+root.render(
+  <Canvas
+      className="r3f"
+      camera={ {
+          fov: 45,
+          near: 0.1,
+          far: 2000,
+          position: [ -3, 1.5, 4 ]
+      } }
+  >
       <Experience />
-      <ContactShadows 
-        position-y={ -1.4 } 
-        opacity={ 0.4 } 
-        scale={ 5 } 
-        blur={ 2.4 } 
-      />
-    </Canvas>
-  </React.StrictMode>,
+  </Canvas>
 )

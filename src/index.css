@@ -1,6 +1,6 @@
 html, body, #root {
   margin:0;
-  position:0;
+  position:fixed;
   width:100vw;
   height:100vh;
   top:0;
@@ -19,7 +19,7 @@ html, body, #root {
   background-color: black;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 300px) {
   .htmlScreen iframe {
     position: absolute;
     transform: translate(-51%, -50%);
