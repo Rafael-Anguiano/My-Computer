@@ -15,11 +15,39 @@ body,
     touch-action: none;
 }
 
-.htmlScreen iframe
-{
+.htmlScreen iframe {
     width: 1024px;
     height: 670px;
     border: none;
     border-radius: 20px;
-    background: #000000;
+    background-color: black;
+}
+
+@media only screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2) {
+    .htmlScreen iframe {
+        width: 1024px;
+        height: 670px;
+        border: none;
+        border-radius: 20px;
+        background-color: black;
+        /* fix the position */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -69%);
+    }
+}
+@media only screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 3) {
+    .htmlScreen iframe {
+        width: 1024px;
+        height: 670px;
+        border: none;
+        border-radius: 20px;
+        background-color: black;
+        /* fix the position */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -69%);
+    }
 }
