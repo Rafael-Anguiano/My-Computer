@@ -34,7 +34,7 @@ body,
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-51%, -69%);
+        transform: translate(-50%, -69%);
     }
 }
 @media only screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 3) {
@@ -48,6 +48,6 @@ body,
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-51%, -69%);
+        transform: translate(-50%, -69%);
     }
 }
